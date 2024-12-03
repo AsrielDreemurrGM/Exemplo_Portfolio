@@ -15,8 +15,26 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "react"
+        "react",
+        "react-hooks"
     ],
     "rules": {
+      // Problemas Com Hooks Serão Apontados Como Erros;
+      "react-hooks/rules-of-hooks": "error",
+      // Problemas Com Dependências Serão Apontados Como Avisos;
+      "react-hooks/exhaustive-deps": "warn",
+      // Regras Para o TypeScript
+      // Não é Mais Necessário Atualmente, Então Desabilitamos;
+      "react/prop-types": "off",
+      // Também Não é Mais Necessário e Se Não Desativarmos
+      // Apagar "import React from 'react';" Resultaria em Erro;
+      "react/react-in-jsx-scope": "off",
+      // Aqui Desativamos a Obrigatoriedade de Informar o Tipo de Retorno de Funções;
+      "@typescript-eslint/explicit-module-boundary-types": "off"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
     }
 }
