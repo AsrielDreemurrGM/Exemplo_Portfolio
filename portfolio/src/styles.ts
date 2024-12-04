@@ -20,8 +20,8 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 128px auto;
-  gap: 56px;
+  grid-template-columns: 168px auto;
+  gap: 32px;
 
   img {
     max-width: 100%;
