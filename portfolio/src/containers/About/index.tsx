@@ -1,9 +1,10 @@
-import Titulo from '../../components/Title'
+import Title from '../../components/Title'
+import Paragraph from '../../components/Paragraph'
 
 const Sobre = () => (
   <section>
-    <Titulo>Sobre Mim:</Titulo>
-    <p>
+    <Title fontSize={16}>Sobre Mim:</Title>
+    <Paragraph type="primary">
       Sou desenvolvedor web com experiência em HTML5, CSS, Bootstrap, GULP,
       SASS, LESS e GRUNT, além de estar aprimorando minhas habilidades em
       JavaScript e frameworks modernos como React. Meu objetivo é trabalhar
@@ -14,7 +15,7 @@ const Sobre = () => (
       forte interesse em ferramentas modernas e boas práticas de
       desenvolvimento. Estou sempre aberto a novos desafios e motivado a
       colaborar em equipes que valorizam a criatividade e a eficiência.
-    </p>
+    </Paragraph>
   </section>
 )
 
