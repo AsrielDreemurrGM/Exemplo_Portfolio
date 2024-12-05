@@ -11,6 +11,10 @@ const EstiloGlobal = createGlobalStyle`
 
 body {
   padding-top: 80px;
+
+  @media (max-width: 768px) {
+  padding-top: 16px;
+  }
 }
 `
 export default EstiloGlobal
@@ -22,6 +26,11 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 168px auto;
   gap: 32px;
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+    display: block;
+  }
 
   img {
     max-width: 100%;
