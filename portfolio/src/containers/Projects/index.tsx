@@ -1,9 +1,9 @@
 import Titulo from '../../components/Title'
 
-const Projetos = () => (
+const Projects = () => (
   <section>
     <Titulo fontSize={16}>Projetos:</Titulo>
   </section>
 )
 
-export default Projetos
+export default Projects
