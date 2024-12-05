@@ -4,7 +4,11 @@ import Titulo from '../../components/Title'
 
 import { Description, ThemeButton, SidebarContainer } from './styles'
 
-const Sidebar = () => (
+type Props = {
+  changeTheme: () => void
+}
+
+const Sidebar = (props: Props) => (
   <aside>
     <SidebarContainer>
       <Avatar />
@@ -15,7 +19,7 @@ const Sidebar = () => (
       <Description type="primary" fontSize={12}>
         Dev Full Stack Java
       </Description>
-      <ThemeButton>Trocar Tema</ThemeButton>
+      <ThemeButton onClick={props.changeTheme}>Trocar Tema</ThemeButton>
     </SidebarContainer>
   </aside>
 )

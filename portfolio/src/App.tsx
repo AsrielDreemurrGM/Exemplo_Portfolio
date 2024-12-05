@@ -1,18 +1,26 @@
+import { useState } from 'react'
+
 import { ThemeProvider } from 'styled-components'
+import lightTheme from './themes/light'
+import darkTheme from './themes/dark'
 
 import GlobalStyle, { Container } from './styles'
 import Sidebar from './containers/Sidebar'
 import About from './containers/About'
 import Projects from './containers/Projects'
-// import lightTheme from './themes/light'
-import darkTheme from './themes/dark'
 
 function App() {
+  const [isDarkThemeOn, setIsDarkThemeOn] = useState(false)
+
+  function themeChanger() {
+    setIsDarkThemeOn(!isDarkThemeOn)
+  }
+
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={isDarkThemeOn ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Container>
-        <Sidebar />
+        <Sidebar changeTheme={themeChanger} />
         <main>
           <About />
           <Projects />
