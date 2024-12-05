@@ -1,5 +1,6 @@
 import Title from '../../components/Title'
 import Paragraph from '../../components/Paragraph'
+import { GithubSection } from './styles'
 
 const Sobre = () => (
   <section>
@@ -16,6 +17,10 @@ const Sobre = () => (
       desenvolvimento. Estou sempre aberto a novos desafios e motivado a
       colaborar em equipes que valorizam a criatividade e a eficiência.
     </Paragraph>
+    <GithubSection>
+      <img src="https://github-readme-stats.vercel.app/api?username=AsrielDreemurrGM&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AsrielDreemurrGM&layout=compact&langs_count=7&theme=dracula" />
+    </GithubSection>
   </section>
 )
 
