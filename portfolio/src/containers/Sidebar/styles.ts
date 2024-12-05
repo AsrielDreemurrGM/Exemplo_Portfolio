@@ -4,6 +4,10 @@ import { P } from '../../components/Paragraph/styles'
 export const Description = styled(P)`
   margin-top: 24px;
   margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 16px;
+  }
 `
 
 export const ThemeButton = styled.button`
@@ -14,6 +18,10 @@ export const ThemeButton = styled.button`
   border-radius: 12px;
   background-color: #282a35;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    margin-bottom: 16px;
+  }
 `
 
 export const SidebarContainer = styled.div`
