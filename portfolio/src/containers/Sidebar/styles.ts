@@ -13,10 +13,10 @@ export const Description = styled(P)`
 export const ThemeButton = styled.button`
   font-size: 10px;
   font-weight: bold;
-  color: #eee;
+  color: ${(props) => props.theme.backgroundColor};
   padding: 8px;
   border-radius: 12px;
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.primaryColor};
   cursor: pointer;
 
   @media (max-width: 768px) {
